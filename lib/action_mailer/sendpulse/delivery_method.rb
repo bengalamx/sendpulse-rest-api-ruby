@@ -26,6 +26,7 @@ module Sendpulse
       api_protocol = settings.api_protocol
 
       sendpulse_api = SendpulseApi.new(api_client_id, api_client_secret, api_protocol)
+      byebug
 
       email = {
           html: mail.html_part.decoded,
